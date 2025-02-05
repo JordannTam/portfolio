@@ -2,13 +2,13 @@ import { cn } from "@/lib/utils";
 import * as motion from "motion/react-client"
 interface RevealProps {
   children: React.ReactNode;
-  width?: "fit-content" | "w-full";
+  className?: string;
   variant: "left" | "right" | "top";
 }
 
 
 
-export default function Reveal({ children, width = "fit-content", variant} : RevealProps) {
+export default function Reveal({ children, variant, className = "fit-content"} : RevealProps) {
 
   const variants = {
     right: {
@@ -25,7 +25,7 @@ export default function Reveal({ children, width = "fit-content", variant} : Rev
     },
   };
   return (
-    <div className={cn("relative overflow-hidden", width)}>
+    <div className={cn("relative overflow-hidden", className)}>
       <motion.div
         variants={variants[variant]}
         initial="hidden"

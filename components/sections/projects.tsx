@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { projects } from "@/lib/data";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
-import Reveal from "../reveal";
 
 interface Project {
   title: string;
