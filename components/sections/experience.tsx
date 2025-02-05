@@ -23,7 +23,7 @@ export default function Experience() {
 
 function ExperienceCard({ job }: { job: Job }) {
   return (
-    <Card>
+    <Card className="hover:scale-105 transition-all delay-50">
       <CardHeader>
         <div className="flex justify-between items-start">
           <div>

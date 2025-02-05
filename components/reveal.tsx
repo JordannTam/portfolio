@@ -2,8 +2,8 @@ import { cn } from "@/lib/utils";
 import * as motion from "motion/react-client"
 interface RevealProps {
   children: React.ReactNode;
-  width?: "fit-content" | "full";
-  variant: "left" | "right";
+  width?: "fit-content" | "w-full";
+  variant: "left" | "right" | "top";
 }
 
 
@@ -18,6 +18,10 @@ export default function Reveal({ children, width = "fit-content", variant} : Rev
     left: {
       hidden: { opacity: 0, x: -75 },
       visible: { opacity: 1, x: 0 },
+    },
+    top: { 
+      hidden: { opacity: 0, y: -75 }, 
+      visible: { opacity: 1, y: 0 } 
     },
   };
   return (

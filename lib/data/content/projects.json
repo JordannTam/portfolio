@@ -19,7 +19,21 @@
       "Led frontend team using Jira for task management",
       "Implemented JWT authentication and WebSocket communication",
       "Conducted project using Agile methodologies"
-    ]
+    ],
+    "github": "https://github.com/JordannTam/syncFlow"
+  },
+  {
+    "title": "P2PConnect",
+    "period": "Oct 2022 - Nov 2022",
+    "description": "A peer-to-peer file sharing application",
+    "technologies": ["Python", "Sockets", "Threading"],
+    "highlights": [
+      "Architected a multi-threaded network application using Python sockets, implementing a secure client-server architecture with advanced P2P file transfer capabilities",
+      "Developed a robust authentication system with account lockout mechanisms using thread-safe synchronization",
+      "Designed a flexible command interface supporting multiple network operations (file generation, transfer, computation) with real-time communication between edge devices",
+      "Implemented complex networking protocols enabling seamless file sharing and device communication"
+    ],
+    "github": "https://github.com/JordannTam/P2P-Connect"
   },
   {
     "title": "Dungeon Mania",

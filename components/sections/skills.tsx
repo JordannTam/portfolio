@@ -18,7 +18,7 @@ export default function Skills() {
 
 function SkillCard({ title, skills }: { title: string, skills: string[] }) {
   return (
-    <Card>
+    <Card className="hover:scale-105 transition-all delay-50">
       <CardHeader>
         <CardTitle className="text-lg">{title}</CardTitle>
       </CardHeader>
