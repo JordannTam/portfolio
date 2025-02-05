@@ -1,0 +1,6 @@
+{
+  "languages": ["JavaScript", "TypeScript", "Python", "Java", "Rust", "C"],
+  "frameworks": ["React", "Vue.js", "Redux.js", "Tailwind", "FastAPI", "Flask", "Node.js"],
+  "databases": ["PostgreSQL", "MongoDB"],
+  "tools": ["Docker", "Git", "AWS", "Firebase", "Selenium"]
+}

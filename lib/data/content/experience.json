@@ -1,0 +1,13 @@
+[
+  {
+    "company": "Mishkan Limited",
+    "role": "Full-Stack Developer",
+    "period": "July 2024 - Present",
+    "achievements": [
+      "Rebuilt frontend from Vue 2 to Vue 3, implementing pagination and optimized API design that reduced page loading time by 50%",
+      "Improved server query performance by 15% through MongoDB query restructuring",
+      "Ensured scalability with 99.9% uptime by deploying Dockerized application on AWS EC2",
+      "Developed Python automation system using APIs and Selenium, reducing manual data entry time by 90%"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "ConnectHub",
+    "period": "Oct 2024 - Present",
+    "description": "A responsive web-based server-client communication platform",
+    "technologies": ["React", "Next.js", "Tailwind", "PostgreSQL", "Firebase", "Socket.io"],
+    "highlights": [
+      "Built using Next.js backend and React frontend with Tailwind and shadcn/ui",
+      "Implemented user authentication with Firebase and PostgreSQL database",
+      "Developed real-time communication system with Socket.io"
+    ]
+  },
+  {
+    "title": "SyncFlow",
+    "period": "Jun 2023 - Aug 2023",
+    "description": "Task management application with real-time updates",
+    "technologies": ["React", "Tailwind", "Redux.js", "FastAPI", "PostgreSQL", "WebSockets"],
+    "highlights": [
+      "Led frontend team using Jira for task management",
+      "Implemented JWT authentication and WebSocket communication",
+      "Conducted project using Agile methodologies"
+    ]
+  },
+  {
+    "title": "Dungeon Mania",
+    "period": "Jun 2022 - Aug 2022",
+    "description": "A 20x20 block dungeon game with customizable maps",
+    "technologies": ["Java", "Git"],
+    "highlights": [
+      "Developed using object-oriented design principles",
+      "Implemented various design patterns for gameplay mechanics",
+      "Used Scrum methodology for project management"
+    ]
+  }
+]
