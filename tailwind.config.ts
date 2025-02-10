@@ -19,7 +19,7 @@ export default {
 				// White	#e6f1ff #e6f1ff
 				// Green	#64ffda #64ffda
 				"green": '#64ffda',
-				navy: '#0a192f',
+				navy: '#0f172a',
 				'light-navy': '#112240',
 				'lightest-navy': '#233554',
 				'slate': '#8892b0',

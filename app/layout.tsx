@@ -37,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
         <Navbar />
-        <main className={cn("h-full pt-32", "bg-white dark:bg-[#0a192f]")}>
+        <main className={cn("h-full pt-32", "bg-white dark:bg-[#0f172a]")}>
           {children}
         </main>
         </ThemeProvider>
