@@ -1,14 +1,41 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import * as motion from "motion/react-client"
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+
 interface RevealProps {
   children: React.ReactNode;
   className?: string;
   variant: "left" | "right" | "top";
 }
 
+export default function Reveal({ children, variant, className = "fit-content" }: RevealProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
 
+  useEffect(() => {
+    if (!ref.current) return;
 
-export default function Reveal({ children, variant, className = "fit-content"} : RevealProps) {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      }
+    }, { threshold: 0.1 });
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
 
   const variants = {
     right: {
@@ -24,17 +51,17 @@ export default function Reveal({ children, variant, className = "fit-content"} :
       visible: { opacity: 1, y: 0 } 
     },
   };
+
   return (
-    <div className={cn("relative overflow-hidden", className)}>
+    <div ref={ref} className={cn("relative overflow-hidden", className)}>
       <motion.div
         variants={variants[variant]}
         initial="hidden"
-        animate="visible"
+        animate={isVisible ? "visible" : "hidden"}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         {children}
       </motion.div>
     </div>
   );
-  
-};
+}

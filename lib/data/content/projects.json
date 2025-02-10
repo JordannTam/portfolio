@@ -1,31 +1,21 @@
 [
   {
-    "title": "ConnectHub",
-    "period": "Oct 2024 - Present",
-    "description": "A responsive web-based server-client communication platform",
-    "technologies": ["React", "Next.js", "Tailwind", "PostgreSQL", "Firebase", "Socket.io"],
-    "highlights": [
-      "Built using Next.js backend and React frontend with Tailwind and shadcn/ui",
-      "Implemented user authentication with Firebase and PostgreSQL database",
-      "Developed real-time communication system with Socket.io"
-    ]
-  },
-  {
     "title": "SyncFlow",
     "period": "Jun 2023 - Aug 2023",
-    "description": "Task management application with real-time updates",
+    "description": "SyncFlow is an innovative task management system that combines real-time collaboration with intelligent workload optimization. The platform features a sophisticated task scheduling algorithm that uses Monte Carlo simulation and binary search to optimize work hours while ensuring deadline compliance. .The system includes real-time chat functionality using WebSocket, workload estimation based on Amdahl's law, and a multi-criteria search system. Built with React, FastAPI, and PostgreSQL. As Frontend Leader, I architected the UI with emphasis on user experience and real-time updates",
     "technologies": ["React", "Tailwind", "Redux.js", "FastAPI", "PostgreSQL", "WebSockets"],
     "highlights": [
       "Led frontend team using Jira for task management",
       "Implemented JWT authentication and WebSocket communication",
       "Conducted project using Agile methodologies"
     ],
-    "github": "https://github.com/JordannTam/syncFlow"
+    "github": "https://github.com/JordannTam/syncFlow",
+    "picture": "syncflow.png"
   },
   {
     "title": "P2PConnect",
     "period": "Oct 2022 - Nov 2022",
-    "description": "A peer-to-peer file sharing application",
+    "description": "A secure client-server network application built in Python that manages communication and file sharing between edge devices. The system implements both TCP and UDP protocols, featuring robust authentication with account lockout protection, multi-threading for concurrent connections, and comprehensive device monitoring. It includes functionality for peer-to-peer file transfers, data generation, and computation services, demonstrating practical implementation of network programming principles and security measures in a distributed system.",
     "technologies": ["Python", "Sockets", "Threading"],
     "highlights": [
       "Architected a multi-threaded network application using Python sockets, implementing a secure client-server architecture with advanced P2P file transfer capabilities",

@@ -8,15 +8,15 @@ const Portfolio = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 p-8 transition-colors duration-300">
+    <div className="min-h-screen bg-gray-50 dark:bg-navy p-8 transition-colors duration-300">
       {/* Header Section */}
-      <Header />
+      <Header id="header" />
       {/* Skills Section */}
-      <Skills />
+      <Skills id="skills" />
       {/* Experience Section */}
-      <Experience />
+      <Experience id="experience" />
       {/* Projects Section */}
-      <Projects />
+      <Projects id="projects" />
     </div>
   );
 };

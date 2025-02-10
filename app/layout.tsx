@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-import { ModeToggle } from "@/components/mode-toggle";
+import { Navbar } from "@/app/components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,19 +28,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`, `bg-white dark:bg-[#0a192f]`)}
+        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`, ``)}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-
-        {children}
-        <div className="fixed top-5 right-5">
-          <ModeToggle />
-        </div>
+        <Navbar />
+        <main className={cn("h-full pt-32", "bg-white dark:bg-[#0a192f]")}>
+          {children}
+        </main>
         </ThemeProvider>
       </body>
     </html>
