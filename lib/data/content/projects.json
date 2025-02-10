@@ -1,5 +1,18 @@
 [
   {
+    "title": "Portfolio Website",
+    "period": "Jan 2025 - Feb 2025",
+    "description": "A personal portfolio website showcasing my projects, experience, and skills. The site is built with Next.js, Tailwind CSS, and TypeScript, featuring a responsive design and smooth animations. The project includes a custom CMS for easy content management, and is deployed on Vercel for fast loading times. The website is designed to be SEO-friendly and accessible, with a focus on user experience and performance.",
+    "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Frame Motion", "AWS Amplify", "Route 53"],
+    "highlights": [
+      "Designed and developed a responsive website with a focus on user experience and performance",
+      "Implemented custom CMS for easy content management",
+      "Deployed website on Vercel with AWS Amplify for continuous deployment and Route 53 for domain management"
+    ],
+    "url": "https://github.com/JordannTam/portfolio",
+    "picture": "portfolio.png"
+  },
+  {
     "title": "SyncFlow",
     "period": "Jun 2023 - Aug 2023",
     "description": "SyncFlow is an innovative task management system that combines real-time collaboration with intelligent workload optimization. The platform features a sophisticated task scheduling algorithm that uses Monte Carlo simulation and binary search to optimize work hours while ensuring deadline compliance. .The system includes real-time chat functionality using WebSocket, workload estimation based on Amdahl's law, and a multi-criteria search system. Built with React, FastAPI, and PostgreSQL. As Frontend Leader, I architected the UI with emphasis on user experience and real-time updates",

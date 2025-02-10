@@ -10,7 +10,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-navy p-8 transition-colors duration-300">
+    <div className="min-h-screen bg-gray-50 dark:bg-transparent p-8 transition-colors duration-300">
       {/* Header Section */}
       <Header />
       {/* Skills Section */}

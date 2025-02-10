@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`, ``)}
+        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`, `bg-gradient-to-l from-gradient-start dark:bg-black`)}
       >
         <ThemeProvider
           attribute="class"
@@ -36,10 +36,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-        <Navbar />
-        <main className={cn("h-full pt-32", "bg-white dark:bg-[#0f172a]")}>
-          {children}
-        </main>
+          <Navbar />
+          <main className={cn("h-full pt-32", "bg-white dark:bg-gradient-to-l dark:from-gradient-start dark:bg-black")}>
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>

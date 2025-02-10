@@ -18,6 +18,8 @@ export default {
 				// Lightest Slate	#ccd6f6 #ccd6f6
 				// White	#e6f1ff #e6f1ff
 				// Green	#64ffda #64ffda
+        'gradient-start': '#112240', // Dark blue
+        'gradient-end': '#1e3a8a', // Lighter blue
 				"green": '#64ffda',
 				navy: '#0f172a',
 				'light-navy': '#112240',
