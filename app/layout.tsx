@@ -25,10 +25,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // "from-30% to-30% via-40% bg-gradient-to-l from-gradient-start to-black"
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`, `bg-gradient-to-l from-gradient-start dark:bg-black`)}
+        className={cn(`${geistSans.variable} ${geistMono.variable} antialiased`, `bg-gradient-to-l from-gradient-start to-black  h-screen`)}
       >
         <ThemeProvider
           attribute="class"
@@ -37,7 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className={cn("h-full pt-32", "bg-white dark:bg-gradient-to-l dark:from-gradient-start dark:bg-black")}>
+          <main className={cn("pt-20")}>
             {children}
           </main>
         </ThemeProvider>

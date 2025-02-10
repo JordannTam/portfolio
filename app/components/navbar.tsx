@@ -22,9 +22,9 @@ export const Navbar = () => {
 
   return (
     <nav className={cn(
-      " z-50 dark:bg-[rgba(19,19,19,.15)] backdrop-blur-[6px] opacity-80 fixed top-0 items-center w-full p-6 px-10 gap-4 transition-all duration-300",
+      " z-50 dark:bg-[rgba(19,19,19,.15)] backdrop-blur-[6px] opacity-80 fixed top-0 items-center w-full p-6 sm:px-10 sm:gap-4 transition-all duration-300",
     )}>
-      <div className="flex gap-4 w-[90%] left-1/2 relative top-0 -translate-x-1/2 transform">
+      <div className="flex gap-4 w-[90%] left-[40%] sm:left-1/2 relative top-0 -translate-x-1/2 transform">
         <Button variant="none" className={buttonClasses} onClick={() => handleScroll('header')}>ABOUT</Button>
         <Button variant="none" className={buttonClasses} onClick={() => handleScroll('skills')}>SKILLS</Button>
         <Button variant="none" className={buttonClasses} onClick={() => handleScroll('experience')}>EXPERIENCE</Button>
