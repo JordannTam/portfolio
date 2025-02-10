@@ -1,7 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { projects } from "@/lib/data";
 import { Button } from "../ui/button";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, MoveUpRightIcon } from "lucide-react";
 import Reveal from "../reveal";
 
 interface Project {
@@ -30,11 +30,15 @@ export default function Projects({ id }: { id: string }) {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="group transition-all delay-50 border-none hover:shadow-lg bg-transparent hover:dark:bg-light-navy">
+    <Card className="transition-all delay-50 border-none bg-transparent ">
       <CardHeader>
         <div className="flex justify-between items-start">
           <div>
-            <CardTitle className="group-hover:text-green">{project.title}</CardTitle>
+            <CardTitle className="hover:cursor-pointer hover:text-green flex">
+
+              {project.title}
+            <MoveUpRightIcon size={20} className="ml-2" />
+            </CardTitle>
           </div>
           <span className="text-sm text-gray-500">{project.period}</span>
         </div>
