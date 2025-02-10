@@ -2,9 +2,9 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { skills } from '@/lib/data';
 
-export default function Skills({ id }: { id: string }) {
+export default function Skills() {
   return (
-    <section id={id} className="max-w-4xl mx-auto mb-16">
+    <section id="skills" className="max-w-4xl mx-auto mb-16">
       <h2 className="text-2xl font-bold mb-8 text-center dark:text-white">SKILLS</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <SkillCard title="Languages" skills={skills.languages} />

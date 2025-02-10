@@ -1,10 +1,10 @@
 import { personal } from '@/lib/data';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
-export default function Header({ id }: { id: string }) {
+export default function Header() {
 
   return (
-    <section id={id}>
+    <section id="header">
       <header className="max-w-4xl mx-auto mb-16 text-center">
       <h1 className="text-4xl font-bold mb-4 dark:text-white">{personal.name}</h1>
       <h2 className="text-2xl text-gray-600 dark:text-gray-300 mb-6">{personal.title}</h2>

@@ -58,7 +58,7 @@ export default function Reveal({ children, variant, className = "fit-content" }:
         variants={variants[variant]}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         {children}
       </motion.div>

@@ -13,9 +13,9 @@ interface Project {
   github?: string;
 }
 
-export default function Projects({ id }: { id: string }) {
+export default function Projects() {
   return (
-    <section id={id} className="max-w-4xl mx-auto">
+    <section id="projects" className="max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold mb-8 text-center dark:text-white">PROJECTS</h2>
         <div className="space-y-6">
           {projects.map((project, index) => (

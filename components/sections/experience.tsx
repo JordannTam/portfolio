@@ -11,9 +11,9 @@ interface Job {
   technologies: string[];
 }
 
-export default function Experience({ id }: { id: string }) {
+export default function Experience() {
   return (
-    <section id={id} className="max-w-4xl mx-auto mb-16">
+    <section id="experience" className="max-w-4xl mx-auto mb-16">
       <h2 className="text-2xl font-bold mb-8 text-center dark:text-white">EXPERIENCE</h2>
       {experience.map((job, index) => (
         <Reveal key={index} variant="top">

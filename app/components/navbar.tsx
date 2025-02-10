@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
-  const buttonClasses = "rounded-full hover:text-green relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green after:transition-all after:duration-300 hover:after:w-full";
+  const buttonClasses = "rounded-full hover:text-green relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green after:transition-all after:duration-500 hover:after:w-full";
   // const scrolled = useScrollTop();
 
   const handleScroll = (id: string) => {
