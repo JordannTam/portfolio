@@ -3,6 +3,7 @@
     "company": "Mishkan Limited",
     "role": "Full-Stack Developer",
     "period": "July 2024 - Present",
+    "url": "https://revmishkan.com/",
     "achievements": [
       "Rebuilt frontend from Vue 2 to Vue 3, implementing pagination and optimized API design that reduced page loading time by 50%",
       "Improved server query performance by 15% through MongoDB query restructuring",

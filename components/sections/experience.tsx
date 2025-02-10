@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { experience } from "@/lib/data";
-import { MoveUpRightIcon } from "lucide-react";
 import Reveal from "../reveal";
+import HoverArrow from "../hover-arrow";
 
 interface Job {
   company: string;
@@ -9,6 +9,7 @@ interface Job {
   period: string;
   achievements: string[];
   technologies: string[];
+  url: string;
 }
 
 export default function Experience() {
@@ -30,9 +31,8 @@ function ExperienceCard({ job }: { job: Job }) {
       <CardHeader>
         <div className="flex justify-between items-start">
           <div>
-            <CardTitle className="hover:text-green hover:cursor-pointer flex">
-              {job.company}
-              <MoveUpRightIcon size={20} className="ml-2" />
+            <CardTitle>
+              <HoverArrow url={job.url} title={job.company}/>
             </CardTitle>
             <CardDescription className="dark:text-light-slate">{job.role}</CardDescription>
           </div>
