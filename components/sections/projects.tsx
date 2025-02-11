@@ -37,12 +37,12 @@ function ProjectCard({ project }: { project: Project }) {
               <HoverArrow url={project.url} title={project.title}/>
             </CardTitle>
           </div>
-          <span className="text-sm text-gray-500">{project.period}</span>
+          <span className="text-sm text-slate">{project.period}</span>
         </div>
       </CardHeader>
       <CardContent>
         <div className="mb-4">
-          <div className="dark:text-slate">{project.description}</div>
+          <div className="dark:text-light-slate">{project.description}</div>
         </div>
       </CardContent>
       

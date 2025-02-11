@@ -34,15 +34,15 @@ function ExperienceCard({ job }: { job: Job }) {
             <CardTitle>
               <HoverArrow url={job.url} title={job.company}/>
             </CardTitle>
-            <CardDescription className="dark:text-light-slate">{job.role}</CardDescription>
+            <CardDescription className="dark:text-slate">{job.role}</CardDescription>
           </div>
-          <span className="text-sm text-gray-500">{job.period}</span>
+          <span className="text-sm text-slate">{job.period}</span>
         </div>
       </CardHeader>
       <CardContent>
         <ul className="list-disc ml-6 space-y-2">
           {job.achievements.map((achievement, i) => (
-            <li className="dark:text-slate" key={i}>{achievement}</li>
+            <li className="dark:text-light-slate" key={i}>{achievement}</li>
           ))}
         </ul>
       </CardContent>
