@@ -45,7 +45,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className={cn("pt-20")}>
+          <main className={cn("pt-32 sm:pt-20")}>
             {children}
           </main>
         </ThemeProvider>
