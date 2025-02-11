@@ -1,8 +1,8 @@
 [
   {
-    "title": "Portfolio Website",
+    "title": "Portfolio",
     "period": "Jan 2025 - Feb 2025",
-    "description": "A personal portfolio website showcasing my projects, experience, and skills. The site is built with Next.js, Tailwind CSS, and TypeScript, featuring a responsive design and smooth animations. The project includes a custom CMS for easy content management, and is deployed on Vercel for fast loading times. The website is designed to be SEO-friendly and accessible, with a focus on user experience and performance.",
+    "description": "A personal portfolio website showcasing my projects, experience, and skills. The site is built with Next.js, Tailwind CSS, and TypeScript, featuring a responsive design and smooth animations. The project includes a custom CMS for easy content management, and is deployed on  for AWS Amplify for fast loading times and register domain from Route 53. The website is designed to be SEO-friendly and accessible, with a focus on user experience and performance.",
     "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Frame Motion", "AWS Amplify", "Route 53"],
     "highlights": [
       "Designed and developed a responsive website with a focus on user experience and performance",

@@ -21,23 +21,19 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={cn(
-      " z-50 dark:bg-[rgba(19,19,19,.15)] backdrop-blur-[6px] opacity-80 fixed top-0 items-center w-full p-6 sm:px-10 sm:gap-4 transition-all duration-300",
-    )}>
-      <div className="flex gap-4 w-[90%] left-[40%] sm:left-1/2 relative top-0 -translate-x-1/2 transform">
-        <Button variant="none" className={buttonClasses} onClick={() => handleScroll('header')}>ABOUT</Button>
-        <Button variant="none" className={buttonClasses} onClick={() => handleScroll('skills')}>SKILLS</Button>
-        <Button variant="none" className={buttonClasses} onClick={() => handleScroll('experience')}>EXPERIENCE</Button>
-        <Button variant="none" className={buttonClasses} onClick={() => handleScroll('projects')}>PROJECTS</Button>
-        <Button variant="none" className={buttonClasses} onClick={() => handleScroll('contact')}>CONTACT</Button>
-
-      </div>
-      <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
-        {/* <ModeToggle /> */}
-      </div>
-      
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[90%] border-b border-b-[#f4f4f4]">
+    <nav className=" z-50 fixed top-0 w-full">
+      <div className="dark:bg-[rgba(19,19,19,.15)] opacity-80 backdrop-blur-[6px] mx-auto py-4 items-center md:p-6">
+        <div className="flex justify-center gap-[0px] md:justify-normal md:gap-4 md:px-6">
+          <Button variant="none" className={`${buttonClasses} hidden sm:block`} onClick={() => handleScroll('header')}>ABOUT</Button>
+          <Button variant="none" className={buttonClasses} onClick={() => handleScroll('skills')}>SKILLS</Button>
+          <Button variant="none" className={buttonClasses} onClick={() => handleScroll('experience')}>EXPERIENCE</Button>
+          <Button variant="none" className={buttonClasses} onClick={() => handleScroll('projects')}>PROJECTS</Button>
+          <Button variant="none" className={`${buttonClasses} hidden sm:block`} onClick={() => handleScroll('contact')}>CONTACT</Button>
         </div>
+      </div>
+      <div className="border-b border-b-[#f4f4f4] w-[95%] mx-auto">
+      </div>
     </nav>
+
   );
 };

@@ -4,7 +4,7 @@ import * as motion from "motion/react-client"
 import { ArrowUpRightIcon } from "lucide-react";
 
 export default function HoverArrow({ className, title, url }: { className?: string, title: string, url?: string }) {
-  const textClasses = "hover:text-green relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green after:transition-all after:duration-500 hover:after:w-full";
+  const textClasses = "gap-1 inline-flex hover:text-green relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-green after:transition-all after:duration-500 hover:after:w-full";
 
   const textMotion = {
     rest: {
@@ -40,16 +40,17 @@ export default function HoverArrow({ className, title, url }: { className?: stri
         whileHover="hover"
         className="hover:text-green hover:cursor-pointer flex items-center gap-2"
       >
-        <span className={textClasses}>
-          {title}
-        </span>
+
+      <span className={textClasses}>
+        {title}
         {
           url && (
             <motion.div variants={textMotion} >
-              <ArrowUpRightIcon  size={20}  />
+              <ArrowUpRightIcon className="inline" size={20}  />
             </motion.div>
           )
         }
+      </span>
       </motion.div>
     </div>
   );
