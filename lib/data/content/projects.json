@@ -48,5 +48,17 @@
       "Implemented various design patterns for gameplay mechanics",
       "Used Scrum methodology for project management"
     ]
+  },
+  {
+    "title": "Operating System Development",
+    "period": "Jan 2022 - Apr 2022",
+    "description": "The OS/161 project is an educational operating system designed to teach fundamental concepts of operating systems through hands-on assignments. The project covers six key areas: synchronization, basic system calls, virtual memory, basic file system functionality, file system recovery via journaling, and additional OS functionality. In this project, I implemented synchronization primitives, essential system calls for file operations and process management, and enhanced file system functionality with additional system calls and a buffer cache. The project provided a comprehensive learning experience in operating system development.",
+    "technologies": ["C", "OS/161"],
+    "highlights": [
+      "Implemented synchronization primitives (locks, condition variables) for thread management",
+      "Developed system calls for file operations and process management",
+      "Enhanced file system functionality with additional system calls and buffer cache",
+      "Implemented journaling for file system recovery and additional OS functionality"
+    ]
   }
 ]
